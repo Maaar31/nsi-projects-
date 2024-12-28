@@ -1,0 +1,205 @@
+/* Général */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF0F5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #FF1493;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FF69B4;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #FF1493;
+    color: white;
+}
+
+/* Contenu principal */
+.main-content {
+    text-align: center;
+    padding: 30px 10%;
+}
+
+.carousel {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.carousel img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.carousel p {
+    font-size: 1.2rem;
+    color: #FF1493;
+    font-weight: bold;
+}
+
+/* Cartes de profil */
+.profiles {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.profile-card {
+    background-color: #FF69B4;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+.profile-card img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.profile-card h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.profile-card p {
+    font-size: 1rem;
+}
+
+.profile-card button {
+    background-color: #FF1493;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-card button:hover {
+    background-color: #FF69B4;
+}
+
+/* Appel à l'action */
+.cta {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cta h2 {
+    font-size: 1.5rem;
+    color: #FF1493;
+}
+
+.cta p {
+    font-size: 1.2rem;
+}
+
+.cta .btn {
+    background-color: #FF1493;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.cta .btn:hover {
+    background-color: #FF69B4;
+}
+/* Formulaire d'inscription */
+.form-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #FF69B4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+}
+
+.form-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #FF1493;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group button {
+    background-color: #FF1493;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: #FF69B4;
+}
