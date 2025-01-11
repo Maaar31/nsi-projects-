@@ -203,3 +203,25 @@ footer {
 .form-group button:hover {
     background-color: #FF69B4;
 }
+
+caption {
+    color: #B2110C;
+    font-size: 16px;
+    padding:20px;
+}
+caption {
+    
+}
+th {
+    background-color: dodgerblue;
+    vertical-align: middle;
+}
+
+tr {
+    background-color: #0dc016!important;
+    width:600px;
+}
+td {
+    padding:5px;
+    background-color: #9ed4e4!important;
+}
