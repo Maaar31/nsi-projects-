@@ -251,7 +251,7 @@ a img {
 /* Image RTBF */
 .rtbf-image {
     width: 100%; /* Ajuste à la taille souhaitée (ex. : 50%) */
-    max-width: 5000px; /* Limite la largeur maximale si nécessaire */
+    max-width: 50px; /* Limite la largeur maximale si nécessaire */
     height: auto; /* Conserve les proportions de l'image */
     display: block; /* Centrer si besoin */
     margin: 0 auto; /* Centre l'image horizontalement */
