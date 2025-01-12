@@ -18,7 +18,7 @@
     </header>
 
     <div class="form-container">
-        <h2> Pour améliorer votre expérience décrivez-nous votre type de femme !</h2>
+        <h2> Pour améliorer votre expérience décrivez-nous votre type de partenaire !</h2>
         <form action="#" method="POST">
             <div class="form-group">
                 <label for="name"> Son nom :</label>
