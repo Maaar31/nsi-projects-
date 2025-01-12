@@ -89,7 +89,7 @@ footer {
 }
 
 .profile-card img {
-    width: 80%;
+    width: 60%; /* Image plus petite */
     border-radius: 50%;
 }
 
@@ -144,6 +144,7 @@ footer {
 .cta .btn:hover {
     background-color: #FF69B4;
 }
+
 /* Formulaire d'inscription */
 .form-container {
     width: 80%;
@@ -204,24 +205,46 @@ footer {
     background-color: #FF69B4;
 }
 
-caption {
-    color: #B2110C;
-    font-size: 16px;
-    padding:20px;
-}
-caption {
-    
-}
-th {
-    background-color: dodgerblue;
-    vertical-align: middle;
+/* Table stylisée */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #FFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-tr {
-    background-color: #0dc016!important;
-    width:600px;
+caption {
+    color: #FF1493;
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
 }
-td {
-    padding:5px;
-    background-color: #9ed4e4!important;
+
+th, td {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #FF69B4;
+    color: white;
+    font-size: 1rem;
+}
+
+tr:nth-child(even) {
+    background-color: #FFE4E1;
+}
+
+tr:nth-child(odd) {
+    background-color: #FFF;
+}
+
+a img {
+    display: block;
+    margin: 20px auto;
+    width: 50%; /* Taille réduite de l'image */
+    border-radius: 10px; /* Ajout de coins arrondis */
 }
