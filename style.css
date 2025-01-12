@@ -245,7 +245,7 @@ tr:nth-child(odd) {
 a img {
     display: block;
     margin: 20px auto;
-    width: 50%; /* Taille réduite de l'image */
+    width: 70%; /* Taille réduite de l'image */
     border-radius: 10px; /* Ajout de coins arrondis */
 }
 /* Image RTBF */
