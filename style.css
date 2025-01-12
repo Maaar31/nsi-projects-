@@ -245,13 +245,13 @@ tr:nth-child(odd) {
 a img {
     display: block;
     margin: 20px auto;
-    width: 70%; /* Taille réduite de l'image */
+    width: 100%; /* Taille réduite de l'image */
     border-radius: 10px; /* Ajout de coins arrondis */
 }
 /* Image RTBF */
 .rtbf-image {
-    width: 70%; /* Ajuste à la taille souhaitée (ex. : 50%) */
-    max-width: 500px; /* Limite la largeur maximale si nécessaire */
+    width: 100%; /* Ajuste à la taille souhaitée (ex. : 50%) */
+    max-width: 5000px; /* Limite la largeur maximale si nécessaire */
     height: auto; /* Conserve les proportions de l'image */
     display: block; /* Centrer si besoin */
     margin: 0 auto; /* Centre l'image horizontalement */
