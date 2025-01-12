@@ -248,13 +248,10 @@ a img {
     width: 100%; /* Taille réduite de l'image */
     border-radius: 10px; /* Ajout de coins arrondis */
 }
-/* Image RTBF */
 .rtbf-image {
-    width: 70%; /* Ajuste la taille en pourcentage ou utilise une largeur fixe */
-    max-width: 600px; /* Limite la largeur maximale pour éviter qu'elle ne devienne trop grande */
-    height: auto; /* Garde les proportions de l'image */
-    display: block; /* Permet de centrer avec margin */
-    margin: 20px auto; /* Centre l'image et ajoute un espace autour */
-    border: 2px solid #FF1493; /* (Optionnel) Ajoute un contour pour un style plus joli */
-    border-radius: 10px; /* (Optionnel) Coins arrondis pour un meilleur design */
+    width: 200px; /* Ajuste la taille (par exemple 200px ou une valeur en pourcentage) */
+    height: auto; /* Garde les proportions */
+    border-radius: 10px; /* Coins arrondis */
+    margin: 20px 0; /* Ajoute de l'espace au-dessus et en dessous */
 }
+
