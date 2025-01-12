@@ -249,9 +249,10 @@ a img {
     border-radius: 10px; /* Ajout de coins arrondis */
 }
 .rtbf-image {
-    width: 200px; /* Ajuste la taille (par exemple 200px ou une valeur en pourcentage) */
+    width: 500px; /* Ajuste la taille (par exemple 200px ou une valeur en pourcentage) */
     height: auto; /* Garde les proportions */
     border-radius: 10px; /* Coins arrondis */
-    margin: 20px 0; /* Ajoute de l'espace au-dessus et en dessous */
+    margin: 20px auto; /* Ajoute de l'espace au-dessus et en dessous et centre l'image */
+    display: block; /* Assure que l'image est un bloc pour que margin auto fonctionne */
 }
 
