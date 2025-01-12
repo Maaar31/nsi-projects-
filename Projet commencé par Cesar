@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1> l'amour n'est pas loin</h1>
+        <h1>L'amour n'est pas loin</h1>
         <nav>
             <a href="index.html">Accueil</a>
             <a href="trouvez-amour.html">Trouvez l'amour</a>
@@ -18,20 +18,21 @@
     </header>
 
     <div class="form-container">
-        <h2> Pour améliorer votre expérience décrivez-nous votre type de partenaire !</h2>
+        <h2>Pour améliorer votre expérience, décrivez-nous votre type de partenaire !</h2>
         <form action="#" method="POST">
             <div class="form-group">
-                <label for="name"> Son nom :</label>
+                <label for="name">Nom :</label>
                 <input type="text" id="name" name="name" required>
             </div>
 
             <div class="form-group">
-                <label for="gender">Couleur de cheveux :</label>
-                <select id="gender" name="gender">
+                <label for="hair-color">Couleur de cheveux :</label>
+                <select id="hair-color" name="hair-color">
                     <option value="Blond(e)">Blonde</option>
                     <option value="Brun(e)">Brune</option>
                     <option value="Autre">Autre</option>
                 </select>
+            </div>
 
             <div class="form-group">
                 <label for="age">Âge :</label>
@@ -48,12 +49,12 @@
             </div>
 
             <div class="form-group">
-                <label for="bio">À propos de elle :</label>
-                <textarea id="bio" name="bio" placeholder="Une petite description de votre femme idéal..." rows="4"></textarea>
+                <label for="bio">À propos d'elle/lui :</label>
+                <textarea id="bio" name="bio" placeholder="Décrivez votre partenaire idéal(e)..." rows="4"></textarea>
             </div>
 
             <div class="form-group">
-                <button type="submit" class="btn"> Enregistrer mon type de femme</button>
+                <button type="submit" class="btn">Enregistrer mon type de partenaire</button>
             </div>
         </form>
     </div>
@@ -64,3 +65,6 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+               
+             
