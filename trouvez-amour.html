@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <h1>Trouvez l'amour</h1>
         <nav>
@@ -16,7 +17,9 @@
         </nav>
     </header>
 
-    <div class="profiles">
+    <!-- Profils de membres -->
+    <section class="profiles">
+        <h2>Rencontrez nos membres</h2>
         <div class="profile-card">
             <img src="https://via.placeholder.com/100" alt="Jules">
             <h3>Jules</h3>
@@ -35,46 +38,63 @@
             <p>"Passionné par les memes drôles."</p>
             <button>Envoyer un message</button>
         </div>
-         <div class="profile-card">
+        <div class="profile-card">
             <img src="https://via.placeholder.com/100" alt="Sofia">
             <h3>Sofia</h3>
-            <p>"Aime les balades en fôret et les enfants."</p>
+            <p>"Aime les balades en forêt et les enfants."</p>
             <button>Envoyer un message</button>
-        </div>  
+        </div>
+    </section>
 
-    <!-- Ajouter un formulaire ou un appel à l'action -->
-    <div class="cta">
+    <!-- Appel à l'action -->
+    <section class="cta">
         <h2>Créez votre profil maintenant !</h2>
         <p>Devenez un membre et faites des rencontres improbables.</p>
         <a href="inscription.html" class="btn">Créer un profil</a>
-    </div>
- 
+    </section>
+
+    <!-- Image RTBF -->
+    <section class="love-statistics">
+        <h2>L'amour en France</h2>
+        <p>Découvrez des faits intéressants sur l'amour dans votre région :</p>
+        <a href="https://www.rtbf.be/article/etes-vous-le-couple-parfait-9263869">
+            <img src="https://ds.static.rtbf.be/article/image/1920xAuto/b/1/8/185e48a43c7f63acf74b1bd58827b510-1460122907.jpg" alt="Couple parfait">
+        </a>
+    </section>
+
+    <!-- Tableau des statistiques -->
+    <section>
+        <table>
+            <caption>L'amour en France</caption>
+            <thead>
+                <tr>
+                    <th colspan="2">Régions</th>
+                    <th>Pourcentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Célibataires</td>
+                    <td>Nord</td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <td>Sud</td>
+                    <td>50%</td>
+                </tr>
+                <tr>
+                    <td>Bretons</td>
+                    <td>10%</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 LoveWish - Tous droits réservés</p>
     </footer>
+
     <script src="script.js"></script>
-    <!--j'ai mis la ce que j'ai fait, il faut arranger certains trucs pour que ça apparaisse plus propre -->
-        <a href="https://www.rtbf.be/article/etes-vous-le-couple-parfait-9263869"><img src="https://ds.static.rtbf.be/article/image/1920xAuto/b/1/8/185e48a43c7f63acf74b1bd58827b510-1460122907.jpg"></a>
-        <table>
-       <caption>L'amour en France</caption>
-       <tr>
-              <th colspan="2">Régions</th>
-              <th>Pourcentage</th>
-       </tr>
-       <tr>
-              <td rowspan="3">Célibataire</td>
-              <td>Nord</td>
-              <td>40%</td>
-             
-       </tr>
-       <tr>
-              <td>Sud</td>
-              <td>50%</td>
-       </tr>
-       <tr>
-              <td>Bretons</td>
-              <td>10%</td>
-       </tr> 
-    
-</table>    </body>
+</body>
 </html>
