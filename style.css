@@ -262,6 +262,7 @@ a img {
     max-width: 150px; /* Fixer une largeur maximale pour les images de profil */
 }
 .profile-line {
+    display: flex;          /* sans ca ca larche pas ca les met en ligne */
     flex-wrap: wrap;        /* reviens a la ligne si ca depasse */
     margin-bottom: 20px; /* met 20PX entre chaque rengé de 5 */
 }
