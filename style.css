@@ -246,7 +246,6 @@ a img {
     display: block;
     margin: 20px auto;
     width: 100%; /* Taille réduite de l'image */
-    border-radius: 10px; /* Ajout de coins arrondis */
 }
 .rtbf-image {
     width: 500px; /* Ajuste la taille (par exemple 200px ou une valeur en pourcentage) */
@@ -256,7 +255,7 @@ a img {
     display: block; /* Assure que l'image est un bloc pour que margin auto fonctionne */
 }
 .profil-img {
-    border-radius: 10px; /* Ajuster pour un effet moins rond */
+    border-radius: 5px; /* Ajuster pour un effet moins rond */
     width: 100%; /* Ajuster pour qu'elle s'intègre bien dans son conteneur */
     height: auto; /* Garder les proportions de l'image */
     object-fit: cover; /* Assure que l'image remplit son conteneur */
