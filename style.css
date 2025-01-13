@@ -255,4 +255,10 @@ a img {
     margin: 20px auto; /* Ajoute de l'espace au-dessus et en dessous et centre l'image */
     display: block; /* Assure que l'image est un bloc pour que margin auto fonctionne */
 }
-
+.profil-img {
+    border-radius: 10px; /* Ajuster pour un effet moins rond */
+    width: 100%; /* Ajuster pour qu'elle s'intègre bien dans son conteneur */
+    height: auto; /* Garder les proportions de l'image */
+    object-fit: cover; /* Assure que l'image remplit son conteneur */
+    max-width: 150px; /* Fixer une largeur maximale pour les images de profil */
+}
