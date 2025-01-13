@@ -261,3 +261,7 @@ a img {
     object-fit: cover; /* Assure que l'image remplit son conteneur */
     max-width: 150px; /* Fixer une largeur maximale pour les images de profil */
 }
+.profile-line {
+    flex-wrap: wrap;        /* reviens a la ligne si ca depasse */
+    margin-bottom: 20px; /* met 20PX entre chaque rengé de 5 */
+}
