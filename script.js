@@ -7,3 +7,10 @@ animatedTitle.addEventListener("mouseover", () => {
 animatedTitle.addEventListener("mouseout", () => {
     animatedTitle.style.animation = "";
 });
+
+window.addEventListener("load", () => {
+    const audio = document.getElementById("background-music");
+    if (audio) {
+        audio.play();
+    }
+});
