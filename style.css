@@ -85,7 +85,7 @@ footer {
 }
 
 .profile-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px); /* quand la souris de l'utilisateur passe desu la carte se soulève */
 }
 
 .profile-card img {
@@ -258,11 +258,13 @@ a img {
     border-radius: 5px; /* Ajuster pour un effet moins rond */
     width: 100%; /* Ajuster pour qu'elle s'intègre bien dans son conteneur */
     height: auto; /* Garder les proportions de l'image */
-    object-fit: cover; /* Assure que l'image remplit son conteneur */
     max-width: 150px; /* Fixer une largeur maximale pour les images de profil */
 }
 .profile-line {
-    display: flex;          /* sans ca ca larche pas ca les met en ligne */
+    display: flex;          /* sans ca ca marche pas ca les met en ligne */
     flex-wrap: wrap;        /* reviens a la ligne si ca depasse */
-    margin-bottom: 20px; /* met 20PX entre chaque rengé de 5 */
+    margin: 80px;           /* c'est la marge à partir de la gauche */
+    gap: 40px;              /* Espacement entre les lignes et les colonnes */
+    margin-top: 20px;       /* met un petit espace en haut de 20 pixels */
+    margin-bottom: 20px;    /* Espace entre les lignes */
 }
