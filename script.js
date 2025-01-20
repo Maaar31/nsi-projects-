@@ -14,3 +14,15 @@ window.addEventListener("load", () => {
         audio.play();
     }
 });
+
+function toggleMusic() {
+    const audio = document.getElementById("background-music");
+    const button = document.getElementById("toggle-music");
+    if (audio.paused) {
+        audio.play();
+        button.textContent = "Désactiver la musique";
+    } else {
+        audio.pause();
+        button.textContent = "Activer la musique";
+    }
+}
