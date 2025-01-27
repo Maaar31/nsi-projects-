@@ -77,7 +77,7 @@ footer {
     background-color: #FF69B4;
     color: white;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 10px; /* met les bord des cartes arondi */
     text-align: center;
     width: 200px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -86,11 +86,6 @@ footer {
 
 .profile-card:hover {
     transform: translateY(-10px); /* quand la souris de l'utilisateur passe desu la carte se soulève */
-}
-
-.profile-card img {
-    width: 60%; /* Image plus petite */
-    border-radius: 50%;
 }
 
 .profile-card h3 {
@@ -255,9 +250,7 @@ a img {
     display: block; /* Assure que l'image est un bloc pour que margin auto fonctionne */
 }
 .profil-img {
-    border-radius: 5px; /* Ajuster pour un effet moins rond */
-    width: 100%; /* Ajuster pour qu'elle s'intègre bien dans son conteneur */
-    height: auto; /* Garder les proportions de l'image */
+    border-radius: 20px; /* Ajuster pour un effet de bordure arrondie  */
     max-width: 150px; /* Fixer une largeur maximale pour les images de profil */
 }
 .profile-line {
@@ -266,5 +259,5 @@ a img {
     margin: 80px;           /* c'est la marge à partir de la gauche */
     gap: 40px;              /* Espacement entre les lignes et les colonnes */
     margin-top: 20px;       /* met un petit espace en haut de 20 pixels */
-    margin-bottom: 20px;    /* Espace entre les lignes */
+    margin-bottom: 20px;    /* Espace a la fin de 20 px aussi */
 }
