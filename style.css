@@ -261,3 +261,50 @@ a img {
     margin-top: 20px;       /* met un petit espace en haut de 20 pixels */
     margin-bottom: 20px;    /* Espace a la fin de 20 px aussi */
 }
+/* menu deroulant */
+nav ul {
+    list-style-type: none; /* Supprime les puces des listes */
+    margin: 0; /* Supprime la marge par défaut */
+    display: flex; /* Affiche les éléments en ligne */
+    justify-content: center; /* Centre les éléments horizontalement */
+    background-color: #FF1493; /* Couleur de fond du menu */
+}
+
+/* Style des éléments du menu */
+nav ul li {
+    position: relative; /* Nécessaire pour positionner le sous-menu */
+    padding: 10px 20px; /* Ajoute de l'espace autour du text */
+}
+
+/* Style des liens du menu principal */
+nav ul li a {
+    color: white; /* Couleur du texte */
+    font-weight: bold; /* Met le texte en gras */
+}
+
+/* Style du sous-menu */
+.sous {
+    display: none; /* Cache le sous-menu par défaut */
+    position: absolute; /* Positionne le sous-menu en absolu par rapport à son parent (sinon c'est tout le bandeau qui grosit)*/
+    top: 100%; /* Place le sous-menu juste en dessous de son parent */
+    background-color: #FF1493; /* Couleur de fond du sous-menu */
+    padding: 0; /* Supprime le padding (sinon c'est decaler)*/
+    width: 125px; /* Largeur  */
+    border-radius: 10px; /* Arrondit les angles */
+}
+
+/* Style des éléments du sous-menu */
+.sous li {
+    padding: 10px; /* Ajoute de l'espace autour du texte (sinon ca passe le 1,2 ou 3 en dessous */
+    border-bottom: 1px solid white; /* trait blanc entre les blogs */
+}
+
+/* Supprime la bordure du dernier élément du sous-menu */
+.sous li:last-child {
+    border-bottom: none;
+}
+
+/* Affichage du sous-menu au survol du parent */
+nav ul li:hover .sous {
+    display: block; /* Affiche le sous-menu lorsque l'on survole son parent */
+}
