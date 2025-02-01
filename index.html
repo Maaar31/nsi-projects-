@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoveWish - Bienvenue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="background-music" src="Un Rendez-Vous Kitsch(1).mp3" autoplay loop hidden></audio>
+    <header>
+        <h1>Bienvenue sur LoveWish</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="deroulant">
+                    <a href="#">Blog</a>
+                    <ul class="sous">
+                        <li><a href="blog/article1.html">Article 1</a></li>
+                        <li><a href="blog/article2.html">Article 2</a></li>
+                        <li><a href="blog/article3.html">Article 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h2>Le site de l'amour kitsch et décalé !</h2>
+        <p>Plongez dans un univers où les rencontres improbables et l'humour sont au rendez-vous. LoveWish est là pour rendre l'amour accessible à tous, avec une touche de fun et beaucoup de kitsch !</p>
+        
+        <!-- Carrousel d'images ou illustration -->
+        <div style="text-align: center; margin-top: 20px;">
+            <iframe width="560" height="315" src="videopresentation.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <h3>Rejoignez des milliers d'âmes en quête d'amour !</h3>
+        <p><a href="trouvez-amour.html">Cliquez ici pour commencer votre aventure !</a></p>
+        
+        <!-- Nouvelle section : Témoignages -->
+        <section class="testimonials">
+            <h3>Témoignages</h3>
+            <p>"Grâce à LoveWish, j'ai rencontré l'amour de ma vie !" - Alice</p>
+            <p>"Un site amusant et efficace pour trouver l'âme sœur." - Bob</p>
+        </section>
+        
+        <!-- Nouvelle section : Fonctionnalités -->
+        <section class="features">
+            <h3>Nos Fonctionnalités</h3>
+            <ul>
+                <li>Matchmaking intelligent</li>
+                <li>Profils détaillés</li>
+                <li>Messagerie instantanée</li>
+                <li>Événements et rencontres</li>
+            </ul>
+        </section>
+        
+        <!-- Nouvelle section : Appel à l'action -->
+        <section class="call-to-action">
+            <h3>Prêt à trouver l'amour ?</h3>
+            <p>Inscrivez-vous dès maintenant et commencez votre aventure romantique !</p>
+            <a href="inscription.html" class="cta-button">S'inscrire</a>
+        </section>
+        
+        <!-- Nouvelle section : À propos -->
+        <section class="about">
+            <h3>À propos de LoveWish</h3>
+            <p>LoveWish est une plateforme dédiée à aider les gens à trouver l'amour de manière amusante et décalée. Nous croyons que l'amour doit être accessible à tous, peu importe qui vous êtes ou d'où vous venez.</p>
+        </section>
+        
+        <!-- Nouvelle section : Blog -->
+        <section class="blog">
+            <h3>Derniers articles de notre blog</h3>
+            <ul>
+                <li><a href="blog/article1.html">Comment réussir votre premier rendez-vous</a></li>
+                <li><a href="blog/article2.html">Les meilleures activités pour un rendez-vous original</a></li>
+                <li><a href="blog/article3.html">Témoignages de couples qui ont trouvé l'amour sur LoveWish</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <button id="toggle-music" onclick="toggleMusic()">Désactiver la musique</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LoveWish - Tous droits réservés</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

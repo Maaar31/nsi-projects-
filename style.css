@@ -1,0 +1,310 @@
+/* Général */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF0F5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #FF1493;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FF69B4;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #FF1493;
+    color: white;
+}
+
+/* Contenu principal */
+.main-content {
+    text-align: center;
+    padding: 30px 10%;
+}
+
+.carousel {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.carousel img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.carousel p {
+    font-size: 1.2rem;
+    color: #FF1493;
+    font-weight: bold;
+}
+
+/* Cartes de profil */
+.profiles {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.profile-card {
+    background-color: #FF69B4;
+    color: white;
+    padding: 20px;
+    border-radius: 10px; /* met les bord des cartes arondi */
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px); /* quand la souris de l'utilisateur passe desu la carte se soulève */
+}
+
+.profile-card h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.profile-card p {
+    font-size: 1rem;
+}
+
+.profile-card button {
+    background-color: #FF1493;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-card button:hover {
+    background-color: #FF69B4;
+}
+
+/* Appel à l'action */
+.cta {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cta h2 {
+    font-size: 1.5rem;
+    color: #FF1493;
+}
+
+.cta p {
+    font-size: 1.2rem;
+}
+
+.cta .btn {
+    background-color: #FF1493;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.cta .btn:hover {
+    background-color: #FF69B4;
+}
+
+/* Formulaire d'inscription */
+.form-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #FF69B4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+}
+
+.form-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #FF1493;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group button {
+    background-color: #FF1493;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: #FF69B4;
+}
+
+/* Table stylisée */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #FFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+caption {
+    color: #FF1493;
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #FF69B4;
+    color: white;
+    font-size: 1rem;
+}
+
+tr:nth-child(even) {
+    background-color: #FFE4E1;
+}
+
+tr:nth-child(odd) {
+    background-color: #FFF;
+}
+
+a img {
+    display: block;
+    margin: 20px auto;
+    width: 100%; /* Taille réduite de l'image */
+}
+.rtbf-image {
+    width: 500px; /* Ajuste la taille (par exemple 200px ou une valeur en pourcentage) */
+    height: auto; /* Garde les proportions */
+    border-radius: 10px; /* Coins arrondis */
+    margin: 20px auto; /* Ajoute de l'espace au-dessus et en dessous et centre l'image */
+    display: block; /* Assure que l'image est un bloc pour que margin auto fonctionne */
+}
+.profil-img {
+    border-radius: 20px; /* Ajuster pour un effet de bordure arrondie  */
+    max-width: 150px; /* Fixer une largeur maximale pour les images de profil */
+}
+.profile-line {
+    display: flex;          /* sans ca ca marche pas ca les met en ligne */
+    flex-wrap: wrap;        /* reviens a la ligne si ca depasse */
+    margin: 80px;           /* c'est la marge à partir de la gauche */
+    gap: 40px;              /* Espacement entre les lignes et les colonnes */
+    margin-top: 20px;       /* met un petit espace en haut de 20 pixels */
+    margin-bottom: 20px;    /* Espace a la fin de 20 px aussi */
+}
+/* menu deroulant */
+nav ul {
+    list-style-type: none; /* Supprime les puces des listes */
+    margin: 0; /* Supprime la marge par défaut */
+    display: flex; /* Affiche les éléments en ligne */
+    justify-content: center; /* Centre les éléments horizontalement */
+    background-color: #FF1493; /* Couleur de fond du menu */
+}
+
+/* Style des éléments du menu */
+nav ul li {
+    position: relative; /* Nécessaire pour positionner le sous-menu */
+    padding: 10px 20px; /* Ajoute de l'espace autour du text */
+}
+
+/* Style des liens du menu principal */
+nav ul li a {
+    color: white; /* Couleur du texte */
+    font-weight: bold; /* Met le texte en gras */
+}
+
+/* Style du sous-menu */
+.sous {
+    display: none; /* Cache le sous-menu par défaut */
+    position: absolute; /* Positionne le sous-menu en absolu par rapport à son parent (sinon c'est tout le bandeau qui grosit)*/
+    top: 100%; /* Place le sous-menu juste en dessous de son parent */
+    background-color: #FF1493; /* Couleur de fond du sous-menu */
+    padding: 0; /* Supprime le padding (sinon c'est decaler)*/
+    width: 125px; /* Largeur  */
+    border-radius: 10px; /* Arrondit les angles */
+}
+
+/* Style des éléments du sous-menu */
+.sous li {
+    padding: 10px; /* Ajoute de l'espace autour du texte (sinon ca passe le 1,2 ou 3 en dessous */
+    border-bottom: 1px solid white; /* trait blanc entre les blogs */
+}
+
+/* Supprime la bordure du dernier élément du sous-menu */
+.sous li:last-child {
+    border-bottom: none;
+}
+
+/* Affichage du sous-menu au survol du parent */
+nav ul li:hover .sous {
+    display: block; /* Affiche le sous-menu lorsque l'on survole son parent */
+}
