@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Wish</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            height: 100vh;
+            background: #ffe6f0;
+            font-family: Arial, sans-serif;
+        }
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centre les éléments en colonne */
+        }
+        .heart {
+            width: 60px;
+            height: 60px;
+            background: red;
+            position: relative;
+            transform: rotate(-45deg); 
+            transition: transform 0.3s; 
+        }
+        .heart::before, .heart::after {
+            content: ''; 
+            position: absolute; 
+            width: 60px;
+            height: 60px;
+            background: red;
+            border-radius: 50%; 
+        }
+        .heart::before { top: -30px; left: 0; } 
+        .heart::after { left: 30px; top: 0; } 
+        .text {
+            font-size: 28px;
+            font-weight: bold;
+            color: #d60000;
+            margin-top: 10px; 
+            text-align: center; /* S'assure que le texte est centré */
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <div class="heart" id="heart"></div>
+        <div class="text">Love Wish</div>
+    </div>
+    <script>
+        const heart = document.getElementById("heart"); 
+        heart.addEventListener("mouseover", () => heart.style.transform = "scale(1.2) rotate(-45deg)");
+        heart.addEventListener("mouseout", () => heart.style.transform = "scale(1) rotate(-45deg)");
+    </script>
+</body>
+</html>
+
 
