@@ -46,3 +46,18 @@
             text-align: center; /* S'assure que le texte est centré */
         }
     </style>
+    </head>
+<body>
+    <div class="logo">
+        <div class="heart" id="heart"></div>
+        <div class="text">Love Wish</div>
+    </div>
+    <script>
+        const heart = document.getElementById("heart"); <--Cela  sélectionne le cœur-->
+        heart.addEventListener("mouseover", () => heart.style.transform = "scale(1.2) rotate(-45deg)");
+        heart.addEventListener("mouseout", () => heart.style.transform = "scale(1) rotate(-45deg)");
+    </script>
+</body>
+</html>
+
+
