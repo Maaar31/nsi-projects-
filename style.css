@@ -351,3 +351,19 @@ nav ul li:hover .sous {
     margin-top: 10px;
     text-align: center;
 }
+
+/* Liens stylisés */
+.styled-link {
+    display: inline-block;
+    background-color: #FF69B4;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.styled-link:hover {
+    transform: scale(1.1);
+    background-color: #FF1493;
+}
