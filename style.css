@@ -1,364 +1,361 @@
 /* Général */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #FFF0F5;
+    font-family: Arial, sans-serif; /* Police générale */
+    background-color: #FFF0F5; /* Couleur de fond */
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #333; /* Couleur du texte */
 }
 
 header {
-    background-color: #FF1493;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+    background-color: #FF1493; /* Couleur de fond de l'en-tête */
+    color: white; /* Couleur du texte de l'en-tête */
+    text-align: center; /* Centrer le texte */
+    padding: 20px 0; /* Espacement interne */
 }
 
 header h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2rem; /* Taille de la police du titre */
 }
 
 nav {
-    margin-top: 10px;
+    margin-top: 10px; /* Marge au-dessus de la navigation */
 }
 
 nav a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+    margin: 0 15px; /* Marge entre les liens */
+    color: white; /* Couleur des liens */
+    text-decoration: none; /* Supprimer la décoration des liens */
+    font-weight: bold; /* Mettre les liens en gras */
+    transition: color 0.3s; /* Transition pour le changement de couleur */
 }
 
 nav a:hover {
-    color: #FF69B4;
+    color: #FF69B4; /* Couleur des liens au survol */
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #FF1493;
-    color: white;
+    text-align: center; /* Centrer le texte */
+    padding: 20px; /* Espacement interne */
+    background-color: #FF1493; /* Couleur de fond du pied de page */
+    color: white; /* Couleur du texte du pied de page */
 }
 
 /* Contenu principal */
 .main-content {
-    text-align: center;
-    padding: 30px 10%;
+    text-align: center; /* Centrer le texte */
+    padding: 30px 10%; /* Espacement interne */
 }
 
 .carousel {
-    width: 80%;
-    margin: 20px auto;
-    text-align: center;
+    width: 80%; /* Largeur du carrousel */
+    margin: 20px auto; /* Marge automatique pour centrer */
+    text-align: center; /* Centrer le texte */
 }
 
 .carousel img {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
+    width: 100%; /* Largeur des images */
+    max-height: 300px; /* Hauteur maximale des images */
+    object-fit: cover; /* Ajuster les images pour couvrir l'espace */
 }
 
 .carousel p {
-    font-size: 1.2rem;
-    color: #FF1493;
-    font-weight: bold;
+    font-size: 1.2rem; /* Taille de la police */
+    color: #FF1493; /* Couleur du texte */
+    font-weight: bold; /* Mettre le texte en gras */
 }
 
 /* Cartes de profil */
 .profiles {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
+    display: flex; /* Affichage en flexbox */
+    justify-content: space-around; /* Espacement entre les éléments */
+    margin-top: 30px; /* Marge au-dessus */
 }
 
 .profile-card {
-    background-color: #FF69B4;
-    color: white;
-    padding: 20px;
-    border-radius: 10px; /* met les bord des cartes arondi */
-    text-align: center;
-    width: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    background-color: #FF69B4; /* Couleur de fond des cartes */
+    color: white; /* Couleur du texte des cartes */
+    padding: 20px; /* Espacement interne */
+    border-radius: 10px; /* Bordures arrondies */
+    text-align: center; /* Centrer le texte */
+    width: 200px; /* Largeur des cartes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre des cartes */
+    transition: transform 0.3s ease-in-out; /* Transition pour le soulèvement des cartes */
 }
 
 .profile-card:hover {
-    transform: translateY(-10px); /* quand la souris de l'utilisateur passe desu la carte se soulève */
+    transform: translateY(-10px); /* Soulèvement des cartes au survol */
 }
 
 .profile-card h3 {
-    font-size: 1.2rem;
-    margin-top: 10px;
+    font-size: 1.2rem; /* Taille de la police des titres */
+    margin-top: 10px; /* Marge au-dessus des titres */
 }
 
 .profile-card p {
-    font-size: 1rem;
+    font-size: 1rem; /* Taille de la police des paragraphes */
 }
 
 .profile-card button {
-    background-color: #FF1493;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #FF1493; /* Couleur de fond des boutons */
+    color: white; /* Couleur du texte des boutons */
+    padding: 10px 20px; /* Espacement interne */
+    border: none; /* Supprimer les bordures */
+    border-radius: 5px; /* Bordures arrondies */
+    cursor: pointer; /* Curseur pointeur */
+    transition: background-color 0.3s ease; /* Transition pour le changement de couleur */
 }
 
 .profile-card button:hover {
-    background-color: #FF69B4;
+    background-color: #FF69B4; /* Couleur de fond des boutons au survol */
 }
 
 /* Appel à l'action */
 .cta {
-    text-align: center;
-    margin-top: 30px;
+    text-align: center; /* Centrer le texte */
+    margin-top: 30px; /* Marge au-dessus */
 }
 
 .cta h2 {
-    font-size: 1.5rem;
-    color: #FF1493;
+    font-size: 1.5rem; /* Taille de la police */
+    color: #FF1493; /* Couleur du texte */
 }
 
 .cta p {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Taille de la police */
 }
 
 .cta .btn {
-    background-color: #FF1493;
-    color: white;
-    padding: 10px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s;
+    background-color: #FF1493; /* Couleur de fond des boutons */
+    color: white; /* Couleur du texte des boutons */
+    padding: 10px 30px; /* Espacement interne */
+    text-decoration: none; /* Supprimer la décoration des liens */
+    border-radius: 5px; /* Bordures arrondies */
+    font-size: 1.2rem; /* Taille de la police */
+    transition: background-color 0.3s; /* Transition pour le changement de couleur */
 }
 
 .cta .btn:hover {
-    background-color: #FF69B4;
+    background-color: #FF69B4; /* Couleur de fond des boutons au survol */
 }
 
 /* Formulaire d'inscription */
 .form-container {
-    width: 80%;
-    max-width: 600px;
-    margin: 40px auto;
-    background-color: #FF69B4;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    color: white;
-    text-align: center;
+    width: 80%; /* Largeur du conteneur */
+    max-width: 600px; /* Largeur maximale */
+    margin: 40px auto; /* Marge automatique pour centrer */
+    background-color: #FF69B4; /* Couleur de fond */
+    padding: 30px; /* Espacement interne */
+    border-radius: 10px; /* Bordures arrondies */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Centrer le texte */
 }
 
 .form-container h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+    font-size: 1.8rem; /* Taille de la police */
+    margin-bottom: 20px; /* Marge en bas */
 }
 
 .form-group {
-    margin-bottom: 20px;
-    text-align: left;
+    margin-bottom: 20px; /* Marge en bas */
+    text-align: left; /* Aligner le texte à gauche */
 }
 
 .form-group label {
-    font-size: 1rem;
-    display: block;
-    margin-bottom: 5px;
+    font-size: 1rem; /* Taille de la police */
+    display: block; /* Affichage en bloc */
+    margin-bottom: 5px; /* Marge en bas */
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 2px solid #FF1493;
-    border-radius: 5px;
-    background-color: #fff;
-    color: #333;
+    width: 100%; /* Largeur à 100% */
+    padding: 10px; /* Espacement interne */
+    font-size: 1rem; /* Taille de la police */
+    border: 2px solid #FF1493; /* Bordure */
+    border-radius: 5px; /* Bordures arrondies */
+    background-color: #fff; /* Couleur de fond */
+    color: #333; /* Couleur du texte */
 }
 
 .form-group textarea {
-    resize: vertical;
+    resize: vertical; /* Redimensionnement vertical uniquement */
 }
 
 .form-group button {
-    background-color: #FF1493;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    background-color: #FF1493; /* Couleur de fond des boutons */
+    color: white; /* Couleur du texte des boutons */
+    padding: 10px 20px; /* Espacement interne */
+    font-size: 1.2rem; /* Taille de la police */
+    border: none; /* Supprimer les bordures */
+    border-radius: 5px; /* Bordures arrondies */
+    cursor: pointer; /* Curseur pointeur */
+    transition: background-color 0.3s; /* Transition pour le changement de couleur */
 }
 
 .form-group button:hover {
-    background-color: #FF69B4;
+    background-color: #FF69B4; /* Couleur de fond des boutons au survol */
 }
 
 /* Table stylisée */
 table {
-    width: 90%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    background-color: #FFF;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Largeur de la table */
+    margin: 20px auto; /* Marge automatique pour centrer */
+    border-collapse: collapse; /* Fusionner les bordures */
+    background-color: #FFF; /* Couleur de fond */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre */
 }
 
 caption {
-    color: #FF1493;
-    font-size: 1.2rem;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
+    color: #FF1493; /* Couleur du texte */
+    font-size: 1.2rem; /* Taille de la police */
+    padding: 10px; /* Espacement interne */
+    text-align: center; /* Centrer le texte */
+    font-weight: bold; /* Mettre le texte en gras */
 }
 
 th, td {
-    padding: 10px 15px;
-    border: 1px solid #ccc;
-    text-align: center;
+    padding: 10px 15px; /* Espacement interne */
+    border: 1px solid #ccc; /* Bordure */
+    text-align: center; /* Centrer le texte */
 }
 
 th {
-    background-color: #FF69B4;
-    color: white;
-    font-size: 1rem;
+    background-color: #FF69B4; /* Couleur de fond des en-têtes */
+    color: white; /* Couleur du texte des en-têtes */
+    font-size: 1rem; /* Taille de la police */
 }
 
 tr:nth-child(even) {
-    background-color: #FFE4E1;
+    background-color: #FFE4E1; /* Couleur de fond des lignes paires */
 }
 
 tr:nth-child(odd) {
-    background-color: #FFF;
+    background-color: #FFF; /* Couleur de fond des lignes impaires */
 }
 
 .rtbf-image {
-    width: 500px; /* Ajuste la taille (par exemple 200px ou une valeur en pourcentage) */
-    height: auto; /* Garde les proportions */
-    border-radius: 10px; /* Coins arrondis */
-    margin: 20px auto; /* Ajoute de l'espace au-dessus et en dessous et centre l'image */
-    display: block; /* Assure que l'image est un bloc pour que margin auto fonctionne */
+    width: 500px; /* Largeur de l'image */
+    height: auto; /* Hauteur automatique pour garder les proportions */
+    border-radius: 10px; /* Bordures arrondies */
+    margin: 20px auto; /* Marge automatique pour centrer */
+    display: block; /* Affichage en bloc */
 }
+
 .profil-img {
-    border-radius: 20px; /* Ajuster pour un effet de bordure arrondie  */
-    max-width: 150px; /* Fixer une largeur maximale pour les images de profil */
+    border-radius: 20px; /* Bordures arrondies */
+    max-width: 150px; /* Largeur maximale */
 }
+
 .profile-line {
-    display: flex;          /* sans ca ca marche pas ca les met en ligne */
-    flex-wrap: wrap;        /* reviens a la ligne si ca depasse */
-    margin: 80px;           /* c'est la marge à partir de la gauche */
-    gap: 40px;              /* Espacement entre les lignes et les colonnes */
-    margin-top: 20px;       /* met un petit espace en haut de 20 pixels */
-    margin-bottom: 20px;    /* Espace a la fin de 20 px aussi */
+    display: flex; /* Affichage en flexbox */
+    flex-wrap: wrap; /* Retour à la ligne si dépassement */
+    margin: 80px; /* Marge */
+    gap: 40px; /* Espacement entre les éléments */
+    margin-top: 20px; /* Marge au-dessus */
+    margin-bottom: 20px; /* Marge en bas */
 }
+
 /* menu deroulant */
 nav ul {
-    list-style-type: none; /* Supprime les puces des listes */
-    margin: 0; /* Supprime la marge par défaut */
-    display: flex; /* Affiche les éléments en ligne */
-    justify-content: center; /* Centre les éléments horizontalement */
+    list-style-type: none; /* Supprimer les puces des listes */
+    margin: 0; /* Supprimer la marge par défaut */
+    display: flex; /* Affichage en flexbox */
+    justify-content: center; /* Centrer les éléments horizontalement */
     background-color: #FF1493; /* Couleur de fond du menu */
 }
 
-/* Style des éléments du menu */
 nav ul li {
-    position: relative; /* Nécessaire pour positionner le sous-menu */
-    padding: 10px 20px; /* Ajoute de l'espace autour du text */
+    position: relative; /* Positionnement relatif pour le sous-menu */
+    padding: 10px 20px; /* Espacement interne */
 }
 
-/* Style des liens du menu principal */
 nav ul li a {
-    color: white; /* Couleur du texte */
-    font-weight: bold; /* Met le texte en gras */
+    color: white; /* Couleur du texte des liens */
+    font-weight: bold; /* Mettre le texte en gras */
 }
 
-/* Style du sous-menu */
 .sous {
-    display: none; /* Cache le sous-menu par défaut */
-    position: absolute; /* Positionne le sous-menu en absolu par rapport à son parent (sinon c'est tout le bandeau qui grosit)*/
-    top: 100%; /* Place le sous-menu juste en dessous de son parent */
+    display: none; /* Cacher le sous-menu par défaut */
+    position: absolute; /* Positionnement absolu */
+    top: 100%; /* Placer le sous-menu en dessous du parent */
     background-color: #FF1493; /* Couleur de fond du sous-menu */
-    padding: 0; /* Supprime le padding (sinon c'est decaler)*/
-    width: 125px; /* Largeur  */
-    border-radius: 10px; /* Arrondit les angles */
+    padding: 0; /* Supprimer le padding */
+    width: 125px; /* Largeur du sous-menu */
+    border-radius: 10px; /* Bordures arrondies */
 }
 
-/* Style des éléments du sous-menu */
 .sous li {
-    padding: 10px; /* Ajoute de l'espace autour du texte (sinon ca passe le 1,2 ou 3 en dessous */
-    border-bottom: 1px solid white; /* trait blanc entre les blogs */
+    padding: 10px; /* Espacement interne */
+    border-bottom: 1px solid white; /* Bordure en bas */
 }
 
-/* Supprime la bordure du dernier élément du sous-menu */
 .sous li:last-child {
-    border-bottom: none;
+    border-bottom: none; /* Supprimer la bordure du dernier élément */
 }
 
-/* Affichage du sous-menu au survol du parent */
 nav ul li:hover .sous {
-    display: block; /* Affiche le sous-menu lorsque l'on survole son parent */
+    display: block; /* Afficher le sous-menu au survol */
 }
 
 /* Logo animé */
 .logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex; /* Affichage en flexbox */
+    flex-direction: column; /* Affichage en colonne */
+    align-items: center; /* Centrer les éléments horizontalement */
 }
 
 .heart {
-    width: 60px;
-    height: 60px;
-    background: red;
-    position: relative;
-    transform: rotate(-45deg);
-    transition: transform 0.3s;
+    width: 60px; /* Largeur du cœur */
+    height: 60px; /* Hauteur du cœur */
+    background: red; /* Couleur de fond du cœur */
+    position: relative; /* Positionnement relatif */
+    transform: rotate(-45deg); /* Rotation du cœur */
+    transition: transform 0.3s; /* Transition pour la transformation */
 }
 
 .heart::before, .heart::after {
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background: red;
-    border-radius: 50%;
+    content: ''; /* Contenu vide */
+    position: absolute; /* Positionnement absolu */
+    width: 60px; /* Largeur des pseudo-éléments */
+    height: 60px; /* Hauteur des pseudo-éléments */
+    background: red; /* Couleur de fond des pseudo-éléments */
+    border-radius: 50%; /* Bordures arrondies */
 }
 
 .heart::before {
-    top: -30px;
-    left: 0;
+    top: -30px; /* Positionnement en haut */
+    left: 0; /* Positionnement à gauche */
 }
 
 .heart::after {
-    left: 30px;
-    top: 0;
+    left: 30px; /* Positionnement à gauche */
+    top: 0; /* Positionnement en haut */
 }
 
 .text {
-    font-size: 28px;
-    font-weight: bold;
-    color: #d60000;
-    margin-top: 10px;
-    text-align: center;
+    font-size: 28px; /* Taille de la police */
+    font-weight: bold; /* Mettre le texte en gras */
+    color: #d60000; /* Couleur du texte */
+    margin-top: 10px; /* Marge au-dessus */
+    text-align: center; /* Centrer le texte */
 }
 
 /* Liens stylisés */
 .styled-link {
-    display: inline-block;
-    background-color: #FF69B4;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: transform 0.3s, background-color 0.3s;
+    display: inline-block; /* Affichage en bloc */
+    background-color: #FF69B4; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement interne */
+    text-decoration: none; /* Supprimer la décoration des liens */
+    border-radius: 5px; /* Bordures arrondies */
+    transition: transform 0.3s, background-color 0.3s; /* Transition pour la transformation et le changement de couleur */
 }
 
 .styled-link:hover {
-    transform: scale(1.1);
-    background-color: #FF1493;
+    transform: scale(1.1); /* Agrandir au survol */
+    background-color: #FF1493; /* Changer la couleur de fond au survol */
 }

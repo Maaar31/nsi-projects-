@@ -7,16 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Musique de fond -->
     <audio id="background-music" src="Un Rendez-Vous Kitsch(1).mp3" autoplay loop hidden></audio>
     <header>
+        <!-- Logo animé -->
         <div class="logo">
             <div class="heart" id="heart"></div>
             <div class="text">Love Wish</div>
         </div>
+        <!-- Bannière flash -->
         <div class="flash-banner">
             <h2>Bienvenue dans le royaume de l'amour kitsch !</h2>
         </div>
         <h1 class="animated-title">FAQ - LoveWish</h1>
+        <!-- Navigation -->
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -33,16 +37,20 @@
             </ul>
         </nav>
     </header>
+    <!-- Contenu principal -->
     <div class="content">
         <h2>Questions fréquentes</h2>
         <p><strong>Comment fonctionne LoveWish ?</strong> Inscrivez-vous et trouvez l'amour en quelques clics !</p>
         <p><strong>Est-ce gratuit ?</strong> Absolument, l'amour n'a pas de prix (ni de garantie) !</p>
     </div>
+    <!-- Pied de page -->
     <footer>
         <p>&copy; 2024 LoveWish</p>
     </footer>
+    <!-- Scripts -->
     <script src="script.js"></script>
     <script>
+        // Animation du logo
         const heart = document.getElementById("heart"); 
         heart.addEventListener("mouseover", () => heart.style.transform = "scale(1.2) rotate(-45deg)");
         heart.addEventListener("mouseout", () => heart.style.transform = "scale(1) rotate(-45deg)");
