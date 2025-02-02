@@ -308,3 +308,46 @@ nav ul li a {
 nav ul li:hover .sous {
     display: block; /* Affiche le sous-menu lorsque l'on survole son parent */
 }
+
+/* Logo animé */
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heart {
+    width: 60px;
+    height: 60px;
+    background: red;
+    position: relative;
+    transform: rotate(-45deg);
+    transition: transform 0.3s;
+}
+
+.heart::before, .heart::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: red;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -30px;
+    left: 0;
+}
+
+.heart::after {
+    left: 30px;
+    top: 0;
+}
+
+.text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d60000;
+    margin-top: 10px;
+    text-align: center;
+}

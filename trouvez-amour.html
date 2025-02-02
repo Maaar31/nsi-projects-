@@ -10,6 +10,10 @@
     <audio id="background-music" src="Un Rendez-Vous Kitsch(1).mp3" autoplay loop hidden></audio>
     <!-- Header -->
     <header>
+        <div class="logo">
+            <div class="heart" id="heart"></div>
+            <div class="text">Love Wish</div>
+        </div>
         <h1>Trouvez l'amour</h1>
         <nav>
             <ul>
@@ -113,5 +117,10 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        const heart = document.getElementById("heart"); 
+        heart.addEventListener("mouseover", () => heart.style.transform = "scale(1.2) rotate(-45deg)");
+        heart.addEventListener("mouseout", () => heart.style.transform = "scale(1) rotate(-45deg)");
+    </script>
 </body>
 </html>

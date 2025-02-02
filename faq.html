@@ -9,6 +9,10 @@
 <body>
     <audio id="background-music" src="Un Rendez-Vous Kitsch(1).mp3" autoplay loop hidden></audio>
     <header>
+        <div class="logo">
+            <div class="heart" id="heart"></div>
+            <div class="text">Love Wish</div>
+        </div>
         <div class="flash-banner">
             <h2>Bienvenue dans le royaume de l'amour kitsch !</h2>
         </div>
@@ -38,5 +42,10 @@
         <p>&copy; 2024 LoveWish</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+        const heart = document.getElementById("heart"); 
+        heart.addEventListener("mouseover", () => heart.style.transform = "scale(1.2) rotate(-45deg)");
+        heart.addEventListener("mouseout", () => heart.style.transform = "scale(1) rotate(-45deg)");
+    </script>
 </body>
 </html>
