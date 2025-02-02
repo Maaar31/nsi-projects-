@@ -1,1 +1,9 @@
 Faire un quizz pour proposer des personnes a match
+1. Créer une base de données de questions et réponses.
+2. Implémenter un système de score pour évaluer les réponses des utilisateurs.
+3. Ajouter une interface utilisateur pour rendre le quiz interactif.
+4. Inclure des fonctionnalités de feedback pour informer les utilisateurs de leurs performances.
+5. Permettre aux utilisateurs de partager leurs scores sur les réseaux sociaux.
+6. Ajouter des niveaux de difficulté pour rendre le quiz plus engageant.
+7. Implémenter un système de correspondance basé sur les réponses pour proposer des personnes à matcher.
+8. Ajouter des statistiques et des analyses pour suivre les performances des utilisateurs.
