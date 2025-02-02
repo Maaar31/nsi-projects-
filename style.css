@@ -237,11 +237,6 @@ tr:nth-child(odd) {
     background-color: #FFF;
 }
 
-a img {
-    display: block;
-    margin: 20px auto;
-    width: 100%; /* Taille réduite de l'image */
-}
 .rtbf-image {
     width: 500px; /* Ajuste la taille (par exemple 200px ou une valeur en pourcentage) */
     height: auto; /* Garde les proportions */
