@@ -8,18 +8,18 @@
 </head>
 <body>
     <!-- Musique de fond -->
-    <audio id="background-music" src="Un Rendez-Vous Kitsch(1).mp3" autoplay loop hidden></audio>
+    <audio id="musique-fond" src="Un Rendez-Vous Kitsch(1).mp3" autoplay loop hidden></audio>
     <header>
         <!-- Logo animé -->
         <div class="logo">
-            <div class="heart" id="heart"></div>
-            <div class="text">Love Wish</div>
+            <div class="coeur" id="coeur"></div>
+            <div class="texte">Love Wish</div>
         </div>
         <!-- Bannière flash -->
-        <div class="flash-banner">
+        <div class="banniere-flash">
             <h2>Bienvenue dans le royaume de l'amour kitsch !</h2>
         </div>
-        <h1 class="animated-title">Contactez-nous</h1>
+        <h1 class="titre-anime">Contactez-nous</h1>
         <!-- Navigation -->
         <nav>
             <ul>
@@ -38,23 +38,30 @@
         </nav>
     </header>
     <!-- Contenu principal -->
-    <div class="content">
+    <div class="contenu">
         <h2>Contactez-nous</h2>
-        <form id="contact-form">
-            <div class="form-group">
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" required>
+        <!-- Formulaire de contact -->
+        <form id="formulaire-contact">
+            <div class="groupe-formulaire">
+                <label for="motif">Motif du contact :</label>
+                <select id="motif" name="motif" onchange="afficherSousMotif()">
+                    <!-- Options pour le motif du contact -->
+                    <option value="">Sélectionnez un motif</option>
+                    <option value="support">Support Technique</option>
+                    <option value="feedback">Retour d'expérience</option>
+                </select>
             </div>
-            <div class="form-group">
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
+            <div class="groupe-formulaire" id="groupe-sous-motif" style="display: none;">
+                <label for="sous-motif">Sous-catégorie :</label>
+                <select id="sous-motif" name="sous-motif">
+                    <!-- Les options seront ajoutées dynamiquement par JavaScript -->
+                </select>
             </div>
-            <div class="form-group">
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+            <div class="groupe-formulaire">
+                <button type="button" onclick="obtenirEmailContact()">Obtenir l'email de contact</button>
             </div>
-            <button type="submit">Envoyer</button>
         </form>
+        <p id="email-contact"></p>
     </div>
     <!-- Pied de page -->
     <footer>
@@ -63,39 +70,10 @@
     <!-- Scripts -->
     <script src="script.js"></script>
     <script>
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-
-            const contactData = {
-                name: name,
-                email: email,
-                message: message
-            };
-
-            fetch('save_contact.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(contactData)
-            })
-            .then(response => response.text())
-            .then(data => {
-                alert('Votre message a été envoyé avec succès !');
-            })
-            .catch(error => {
-                console.error('Erreur:', error);
-                alert('Une erreur est survenue lors de l\'envoi de votre message.');
-            });
-        });
-
         // Animation du logo
-        const heart = document.getElementById("heart"); 
-        heart.addEventListener("mouseover", () => heart.style.transform = "scale(1.2) rotate(-45deg)");
-        heart.addEventListener("mouseout", () => heart.style.transform = "scale(1) rotate(-45deg)");
+        const coeur = document.getElementById("coeur"); 
+        coeur.addEventListener("mouseover", () => coeur.style.transform = "scale(1.2) rotate(-45deg)");
+        coeur.addEventListener("mouseout", () => coeur.style.transform = "scale(1) rotate(-45deg)");
     </script>
 </body>
 </html>

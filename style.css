@@ -116,21 +116,21 @@ footer {
 }
 
 /* Appel à l'action */
-.cta {
+.Boutontrouveramour {
     text-align: center; /* Centrer le texte */
     margin-top: 30px; /* Marge au-dessus */
 }
 
-.cta h2 {
+.Boutontrouveramour h2 {
     font-size: 1.5rem; /* Taille de la police */
     color: #FF1493; /* Couleur du texte */
 }
 
-.cta p {
+.Boutontrouveramour p {
     font-size: 1.2rem; /* Taille de la police */
 }
 
-.cta .btn {
+.Boutontrouveramour .btn {
     background-color: #FF1493; /* Couleur de fond des boutons */
     color: white; /* Couleur du texte des boutons */
     padding: 10px 30px; /* Espacement interne */
@@ -140,7 +140,7 @@ footer {
     transition: background-color 0.3s; /* Transition pour le changement de couleur */
 }
 
-.cta .btn:hover {
+.Boutontrouveramour .btn:hover {
     background-color: #FF69B4; /* Couleur de fond des boutons au survol */
 }
 
