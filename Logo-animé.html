@@ -97,7 +97,7 @@
             for (let i = 0; i < 6; i++) {
                 let smallHeart = document.createElement("div"); // Création d'un div pour chaque petit cœur
                 smallHeart.className = "small-heart"; // Ajout de la classe pour le style
-                smallHeart.style.left = `${Math.random() * 80 - 40}px`; // Cette ligne de code génère une position horizontale aléatoire pour un petit cœur en utilisant Math.random(), qui produit un nombre entre 0 et 1. Ce nombre est ensuite multiplié par 80 pour obtenir une valeur entre 0 et 80, puis on soustrait 40 afin que la position finale varie entre -40px et 40px. Cela permet aux petits cœurs de se déplacer aléatoirement à gauche ou à droite du cœur principal
+                smallHeart.style.left = (Math.random() * 80 - 40) + "px"; // Cette ligne de code génère une position horizontale aléatoire pour un petit cœur en utilisant Math.random(), qui produit un nombre entre 0 et 1. Ce nombre est ensuite multiplié par 80 pour obtenir une valeur entre 0 et 80, puis on soustrait 40 afin que la position finale varie entre -40px et 40px. Cela permet aux petits cœurs de se déplacer aléatoirement à gauche ou à droite du cœur principal
                 smallHeart.style.top = "-20px"; // Position initiale juste au-dessus du cœur principal
                 smallHeart.style.setProperty('--x-move', `${Math.random() * 60 - 30}px`); // Déplacement aléatoire en X
                 heart.appendChild(smallHeart); // Ajoute le petit cœur dans le cœur principal
