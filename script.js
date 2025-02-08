@@ -74,5 +74,3 @@ function obtenirEmailContact() {
     // Afficher l'email de contact ou un message d'erreur
     document.getElementById("email-contact").textContent = email ? `Veuillez contacter : ${email}` : "Veuillez sélectionner un motif et une sous-catégorie.";
 }
-//fonction pour like 
-console.log("Script chargé");

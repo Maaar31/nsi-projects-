@@ -76,13 +76,13 @@ footer {
 .profile-card {
     background-color: #FF69B4; /* Couleur de fond des cartes */
     color: white; /* Couleur du texte des cartes */
-    padding: 30px 30px; /* Espacement interne */
-    padding-inline-end: 10px;
+    padding: 20px; /* Espacement interne */
     border-radius: 10px; /* Bordures arrondies */
     text-align: center; /* Centrer le texte */
     width: 200px; /* Largeur des cartes */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre des cartes */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre des cartes */
     transition: transform 0.3s ease-in-out; /* Transition pour le soulèvement des cartes */
+    position: relative;
 }
 
 .profile-card:hover {
@@ -366,6 +366,29 @@ nav ul li:hover .sous {
     transform: scale(1.1); /* Agrandir au survol */
     background-color: #FF1493; /* Changer la couleur de fond au survol */
 }
-.dilike {
-    padding: 20px;
+.like-button {
+    font-size: 3em;
+    cursor: pointer;
+    color: black;
+    position: relative; /* Positionnement relatif pour eviter le chevauchemnt */
+    margin-top: 20px; /* Marge en haut */
+    margin-left: 5px; /* Marge à gauche */
+}
+.like-button:hover {
+    color: red;
+}
+.like-button.liked {
+    color: red;
+}
+
+.close-button {
+    font-size: 3em;
+    cursor: pointer;
+    color: black;
+    position: relative; /* Positionnement relatif pour eviter le chevauchemnt */
+    margin-top: 20px; 
+    margin-left: 25px;
+}
+.close-button:hover {
+    color: red;
 }
