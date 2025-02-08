@@ -1,76 +1,76 @@
 // Effet pour les titres
-const animatedTitle = document.querySelector(".animated-title");
-animatedTitle.addEventListener("mouseover", () => {
-    animatedTitle.style.animation = "fadeIn 2s ease-in-out"; // Appliquer l'animation au survol
+const titreAnime = document.querySelector(".titre-anime");
+titreAnime.addEventListener("mouseover", () => {
+    titreAnime.style.animation = "fadeIn 2s ease-in-out"; // Appliquer l'animation au survol
 });
 
-animatedTitle.addEventListener("mouseout", () => {
-    animatedTitle.style.animation = ""; // Supprimer l'animation lorsque la souris quitte
+titreAnime.addEventListener("mouseout", () => {
+    titreAnime.style.animation = ""; // Supprimer l'animation lorsque la souris quitte
 });
 
 window.addEventListener("load", () => {
-    const audio = document.getElementById("background-music");
+    const audio = document.getElementById("musique-fond");
     if (audio) {
         audio.play(); // Jouer la musique de fond au chargement de la page
     }
 });
 
-function toggleMusic() {
-    const audio = document.getElementById("background-music");
-    const button = document.getElementById("toggle-music");
+function basculerMusique() {
+    const audio = document.getElementById("musique-fond");
+    const bouton = document.getElementById("basculer-musique");
     if (audio.paused) {
         audio.play(); // Jouer la musique si elle est en pause
-        button.textContent = "Désactiver la musique"; // Mettre à jour le texte du bouton
+        bouton.textContent = "Désactiver la musique"; // Mettre à jour le texte du bouton
     } else {
         audio.pause(); // Mettre en pause la musique si elle est en lecture
-        button.textContent = "Activer la musique"; // Mettre à jour le texte du bouton
+        bouton.textContent = "Activer la musique"; // Mettre à jour le texte du bouton
     }
 }
 
 // Fonction pour afficher les sous-catégories
-function showSubReason() {
-    const reason = document.getElementById("reason").value;
-    const subReasonGroup = document.getElementById("sub-reason-group");
-    const subReasonSelect = document.getElementById("sub-reason");
-    subReasonSelect.innerHTML = ""; // Réinitialiser les options
+function afficherSousMotif() {
+    const motif = document.getElementById("motif").value;
+    const groupeSousMotif = document.getElementById("groupe-sous-motif");
+    const sousMotifSelect = document.getElementById("sous-motif");
+    sousMotifSelect.innerHTML = ""; // Réinitialiser les options
 
-    // Ajouter les options en fonction de la raison sélectionnée
-    if (reason === "support") {
-        subReasonSelect.innerHTML = `
+    // Ajouter les options en fonction du motif sélectionné
+    if (motif === "support") {
+        sousMotifSelect.innerHTML = `
             <option value="technical">Problème technique</option>
             <option value="account">Problème de compte</option>
         `;
-    } else if (reason === "feedback") {
-        subReasonSelect.innerHTML = `
+    } else if (motif === "feedback") {
+        sousMotifSelect.innerHTML = `
             <option value="suggestion">Suggestion</option>
             <option value="complaint">Plainte</option>
         `;
     }
 
-    subReasonGroup.style.display = reason ? "block" : "none"; // Afficher ou cacher le groupe de sous-catégories
+    groupeSousMotif.style.display = motif ? "block" : "none"; // Afficher ou cacher le groupe de sous-catégories
 }
 
 // Fonction pour obtenir l'email de contact
-function getContactEmail() {
-    const reason = document.getElementById("reason").value;
-    const subReason = document.getElementById("sub-reason").value;
+function obtenirEmailContact() {
+    const motif = document.getElementById("motif").value;
+    const sousMotif = document.getElementById("sous-motif").value;
     let email = "";
 
-    // Déterminer l'email en fonction de la raison et de la sous-catégorie sélectionnées
-    if (reason === "support") {
-        if (subReason === "technical") {
+    // Déterminer l'email en fonction du motif et de la sous-catégorie sélectionnés
+    if (motif === "support") {
+        if (sousMotif === "technical") {
             email = "techsupport@lovewish.com";
-        } else if (subReason === "account") {
+        } else if (sousMotif === "account") {
             email = "accountsupport@lovewish.com";
         }
-    } else if (reason === "feedback") {
-        if (subReason === "suggestion") {
+    } else if (motif === "feedback") {
+        if (sousMotif === "suggestion") {
             email = "suggestions@lovewish.com";
-        } else if (subReason === "complaint") {
+        } else if (sousMotif === "complaint") {
             email = "complaints@lovewish.com";
         }
     }
 
     // Afficher l'email de contact ou un message d'erreur
-    document.getElementById("contact-email").textContent = email ? `Veuillez contacter : ${email}` : "Veuillez sélectionner une raison et une sous-catégorie.";
+    document.getElementById("email-contact").textContent = email ? `Veuillez contacter : ${email}` : "Veuillez sélectionner un motif et une sous-catégorie.";
 }
