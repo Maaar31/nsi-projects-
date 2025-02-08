@@ -76,7 +76,8 @@ footer {
 .profile-card {
     background-color: #FF69B4; /* Couleur de fond des cartes */
     color: white; /* Couleur du texte des cartes */
-    padding: 20px; /* Espacement interne */
+    padding: 30px 30px; /* Espacement interne */
+    padding-inline-end: 10px;
     border-radius: 10px; /* Bordures arrondies */
     text-align: center; /* Centrer le texte */
     width: 200px; /* Largeur des cartes */
@@ -105,6 +106,9 @@ footer {
     border-radius: 5px; /* Bordures arrondies */
     cursor: pointer; /* Curseur pointeur */
     transition: background-color 0.3s ease; /* Transition pour le changement de couleur */
+    position: relative;
+    top: 15px;  /*pour que le boutton ne soit pzs collé au dessu*/
+    bottom: 10px;
 }
 
 .profile-card button:hover {
@@ -258,7 +262,10 @@ tr:nth-child(odd) {
     margin-top: 20px; /* Marge au-dessus */
     margin-bottom: 20px; /* Marge en bas */
 }
-
+#bouton-voir-plus { /* pour bien postitioner le bouton voir plus */
+    position: absolute;
+    top: 325px; left: 225px;
+}
 /* menu deroulant */
 nav ul {
     list-style-type: none; /* Supprimer les puces des listes */
