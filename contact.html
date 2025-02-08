@@ -40,21 +40,28 @@
     <!-- Contenu principal -->
     <div class="content">
         <h2>Contactez-nous</h2>
+        <!-- Formulaire de contact -->
         <form id="contact-form">
             <div class="form-group">
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" required>
+                <label for="reason">Raison du contact :</label>
+                <select id="reason" name="reason" onchange="showSubReason()">
+                    <!-- Options pour la raison du contact -->
+                    <option value="">Sélectionnez une raison</option>
+                    <option value="support">Support Technique</option>
+                    <option value="feedback">Retour d'expérience</option>
+                </select>
+            </div>
+            <div class="form-group" id="sub-reason-group" style="display: none;">
+                <label for="sub-reason">Sous-catégorie :</label>
+                <select id="sub-reason" name="sub-reason">
+                    <!-- Les options seront ajoutées dynamiquement par JavaScript -->
+                </select>
             </div>
             <div class="form-group">
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
+                <button type="button" onclick="getContactEmail()">Obtenir l'email de contact</button>
             </div>
-            <div class="form-group">
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit">Envoyer</button>
         </form>
+        <p id="contact-email"></p>
     </div>
     <!-- Pied de page -->
     <footer>
@@ -63,35 +70,6 @@
     <!-- Scripts -->
     <script src="script.js"></script>
     <script>
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-
-            const contactData = {
-                name: name,
-                email: email,
-                message: message
-            };
-
-            fetch('save_contact.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(contactData)
-            })
-            .then(response => response.text())
-            .then(data => {
-                alert('Votre message a été envoyé avec succès !');
-            })
-            .catch(error => {
-                console.error('Erreur:', error);
-                alert('Une erreur est survenue lors de l\'envoi de votre message.');
-            });
-        });
-
         // Animation du logo
         const heart = document.getElementById("heart"); 
         heart.addEventListener("mouseover", () => heart.style.transform = "scale(1.2) rotate(-45deg)");
