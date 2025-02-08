@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr"> <!-- Définition de la langue du document en français -->
+<head>
+    <meta charset="UTF-8"> <!-- Encodage du document en UTF-8 pour supporter les caractères spéciaux -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptation du site aux différents écrans -->
+    <title>Love Wish</title> <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <style>
+        /* Style général du corps de la page */
+        body {
+            display: flex; /* Active le modèle flexbox */
+            justify-content: center; /* Centre horizontalement le contenu */
+            align-items: center; /* Centre verticalement le contenu */
+            height: 100vh; /* La hauteur prend toute la fenêtre visible */
+            background: #ffe6f0; /* Couleur de fond rose clair */
+            font-family: Arial, sans-serif; /* Police d'écriture par défaut */
+            flex-direction: column; /* Aligne les éléments verticalement */
+        }
+
+        /* Style du cœur principal */
+        .heart {
+            width: 60px; /* Largeur du carré contenant le cœur */
+            height: 60px; /* Hauteur du carré contenant le cœur */
+            background: red; /* Couleur de fond rouge */
+            position: relative; /* Position relative pour placer les pseudo-éléments */
+            transform: rotate(-45deg); /* Rotation pour former un cœur */
+            transition: transform 0.3s; /* Animation fluide lors du changement de taille */
+        }
+
+        /* Ajout des demi-cercles pour compléter la forme du cœur */
+        .heart::before, .heart::after {
+            content: ''; /* Contenu vide pour générer des éléments avant et après */
+            position: absolute; /* Position absolue par rapport au carré */
+            width: 60px; /* Largeur identique au carré */
+            height: 60px; /* Hauteur identique au carré */
+            background: red; /* Couleur rouge identique au cœur */
+            border-radius: 50%; /* Transformation en cercle */
+        }
+        
+        .heart::before { top: -30px; left: 0; } /* Place le premier cercle en haut du carré */
+        .heart::after { left: 30px; top: 0; } /* Place le deuxième cercle à droite du carré */
+
+        /* Style des petits cœurs générés dynamiquement */
+        .small-heart {
+            position: absolute; /* Position absolue pour le placer indépendamment */
+            width: 15px; /* Taille réduite par rapport au cœur principal */
+            height: 15px;
+            background: red;
+            transform: rotate(-45deg); /* Rotation pour maintenir la forme du cœur */
+            animation: moveHeart 1s ease-out forwards; /* Animation de montée */
+        }
+
+        /* Même principe que le grand cœur, ajout des demi-cercles */
+        .small-heart::before, .small-heart::after {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: red;
+            border-radius: 50%;
+        }
+        .small-heart::before { top: -7.5px; left: 0; } /* Positionne la partie supérieure */
+        .small-heart::after { left: 7.5px; top: 0; } /* Positionne la partie latérale */
+
+        /* Animation de mouvement des petits cœurs */
+        @keyframes moveHeart {
+            to {
+                transform: translateY(-80px) translateX(var(--x-move)) rotate(-45deg); /* Déplacement vers le haut et légèrement sur le côté */
+                opacity: 0; /* Disparition progressive */
+            }
+        }
+
+        /* Style du texte sous le cœur */
+        .text {
+            font-size: 28px; /* Taille de la police */
+            font-weight: bold; /* Texte en gras */
+            color: #d60000; /* Rouge foncé */
+            margin-top: 10px; /* Espacement avec le cœur */
+            text-align: center; /* Alignement centré */
+        }
+    </style>
+</head>
+<body>
+    <!-- Élément représentant le cœur principal -->
+    <div class="heart" id="heart"></div>
+    <!-- Texte affiché sous le cœur -->
+    <div class="text">Love Wish</div>
+    
+    <script>
+        // Sélectionne l'élément du cœur principal
+        const heart = document.getElementById("heart");
+
+        // Ajoute un effet au survol de la souris
+        heart.addEventListener("mouseover", () => {
+            heart.style.transform = "scale(1.2) rotate(-45deg)"; // Agrandit légèrement le cœur
+
+            // Boucle pour créer 6 petits cœurs aléatoires
+            for (let i = 0; i < 6; i++) {
+                let smallHeart = document.createElement("div"); // Création d'un div pour chaque petit cœur
+                smallHeart.className = "small-heart"; // Ajout de la classe pour le style
+                smallHeart.style.left = `${Math.random() * 80 - 40}px`; // Cette ligne de code génère une position horizontale aléatoire pour un petit cœur en utilisant Math.random(), qui produit un nombre entre 0 et 1. Ce nombre est ensuite multiplié par 80 pour obtenir une valeur entre 0 et 80, puis on soustrait 40 afin que la position finale varie entre -40px et 40px. Cela permet aux petits cœurs de se déplacer aléatoirement à gauche ou à droite du cœur principal
+                smallHeart.style.top = "-20px"; // Position initiale juste au-dessus du cœur principal
+                smallHeart.style.setProperty('--x-move', `${Math.random() * 60 - 30}px`); // Déplacement aléatoire en X
+                heart.appendChild(smallHeart); // Ajoute le petit cœur dans le cœur principal
+                
+                // Supprime le petit cœur après 1 seconde pour éviter l'encombrement
+                setTimeout(() => smallHeart.remove(), 1000);
+            }
+        });
+
+        // Rétablit la taille initiale du cœur lorsque la souris quitte
+        heart.addEventListener("mouseout", () => {
+            heart.style.transform = "scale(1) rotate(-45deg)"; // Retour à la taille normale
+        });
+    </script>
+</body>
+</html>
