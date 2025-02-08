@@ -366,3 +366,6 @@ nav ul li:hover .sous {
     transform: scale(1.1); /* Agrandir au survol */
     background-color: #FF1493; /* Changer la couleur de fond au survol */
 }
+.dilike {
+    padding: 20px;
+}
