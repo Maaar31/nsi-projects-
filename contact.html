@@ -46,9 +46,9 @@
                 <label for="motif">Motif du contact :</label>
                 <select id="motif" name="motif" onchange="afficherSousMotif()">
                     <!-- Options pour le motif du contact -->
-                    <option value="">Sélectionnez un motif</option>
-                    <option value="support">Support Technique</option>
-                    <option value="feedback">Retour d'expérience</option>
+                    <option value="" >Sélectionnez un motif</option>
+                    <option value="support" >Support Technique</option>
+                    <option value="feedback" >Retour d'expérience</option>
                 </select>
             </div>
             <div class="groupe-formulaire" id="groupe-sous-motif" style="display: none;">
@@ -58,7 +58,7 @@
                 </select>
             </div>
             <div class="groupe-formulaire">
-                <button type="button" onclick="obtenirEmailContact()">Obtenir l'email de contact</button>
+                <button type="button" class="styled-link" onclick="obtenirEmailContact()">Obtenir l'email de contact</button>
             </div>
         </form>
         <p id="email-contact"></p>

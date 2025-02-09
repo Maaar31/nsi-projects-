@@ -7,6 +7,7 @@ body {
     color: #333; /* Couleur du texte */
 }
 
+/* En-tête */
 header {
     background-color: #FF1493; /* Couleur de fond de l'en-tête */
     color: white; /* Couleur du texte de l'en-tête */
@@ -19,6 +20,7 @@ header h1 {
     font-size: 2rem; /* Taille de la police du titre */
 }
 
+/* Navigation */
 nav {
     margin-top: 10px; /* Marge au-dessus de la navigation */
 }
@@ -35,6 +37,7 @@ nav a:hover {
     color: #FF69B4; /* Couleur des liens au survol */
 }
 
+/* Pied de page */
 footer {
     text-align: center; /* Centrer le texte */
     padding: 20px; /* Espacement interne */
@@ -48,6 +51,7 @@ footer {
     padding: 30px 10%; /* Espacement interne */
 }
 
+/* Carrousel */
 .carousel {
     width: 80%; /* Largeur du carrousel */
     margin: 20px auto; /* Marge automatique pour centrer */
@@ -241,6 +245,7 @@ tr:nth-child(odd) {
     background-color: #FFF; /* Couleur de fond des lignes impaires */
 }
 
+/* Images */
 .rtbf-image {
     width: 500px; /* Largeur de l'image */
     height: auto; /* Hauteur automatique pour garder les proportions */
@@ -254,6 +259,7 @@ tr:nth-child(odd) {
     max-width: 150px; /* Largeur maximale */
 }
 
+/* Ligne de profil */
 .profile-line {
     display: flex; /* Affichage en flexbox */
     flex-wrap: wrap; /* Retour à la ligne si dépassement */
@@ -262,11 +268,14 @@ tr:nth-child(odd) {
     margin-top: 20px; /* Marge au-dessus */
     margin-bottom: 20px; /* Marge en bas */
 }
+
+/* Bouton voir plus */
 #bouton-voir-plus { /* pour bien postitioner le bouton voir plus */
     position: absolute;
     top: 325px; left: 225px;
 }
-/* menu deroulant */
+
+/* Menu déroulant */
 nav ul {
     list-style-type: none; /* Supprimer les puces des listes */
     margin: 0; /* Supprimer la marge par défaut */
@@ -366,6 +375,27 @@ nav ul li:hover .sous {
     transform: scale(1.1); /* Agrandir au survol */
     background-color: #FF1493; /* Changer la couleur de fond au survol */
 }
+
+/* Sélecteur stylisé */
+select {
+    display: inline-block;
+    background-color: #FF69B4;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: transform 0.3s, background-color 0.3s;
+    border: none; /* Supprimer les bordures */
+    cursor: pointer; /* Curseur pointeur */
+}
+
+select:hover {
+    transform: scale(1.1);
+    background-color: #FF1493;
+}
+
+/* Bouton J'aime */
 .like-button {
     font-size: 3em;
     cursor: pointer;
@@ -374,13 +404,16 @@ nav ul li:hover .sous {
     margin-top: 20px; /* Marge en haut */
     margin-left: 5px; /* Marge à gauche */
 }
+
 .like-button:hover {
     color: red;
 }
+
 .like-button.liked {
     color: red;
 }
 
+/* Bouton Fermer */
 .close-button {
     font-size: 3em;
     cursor: pointer;
@@ -389,6 +422,7 @@ nav ul li:hover .sous {
     margin-top: 20px; 
     margin-left: 25px;
 }
+
 .close-button:hover {
     color: red;
 }
