@@ -1,5 +1,5 @@
-// Sélectionner tous les éléments avec la classe "like-button"
-const like = document.querySelectorAll(".like-button");
+// Sélectionner tous les éléments avec la classe "like"
+const like = document.querySelectorAll(".like");
 
 like.forEach(button => {
     button.addEventListener("click", () => {
@@ -20,8 +20,8 @@ like.forEach(button => {
 
 // on fait pareil que pour le boutton croix :
 
-// Sélectionner tous les éléments avec la classe "close-button"
-const closeButtons = document.querySelectorAll(".close-button");
+// Sélectionner tous les éléments avec la classe "croix"
+const closeButtons = document.querySelectorAll(".croix");
 
 closeButtons.forEach(button => {
     button.addEventListener("click", () => {
