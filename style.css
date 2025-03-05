@@ -415,9 +415,8 @@ select:hover {
 
 /* Bouton Fermer */
 .close-button {
-    font-size: 3em;
+    font-size: 1.5em;
     cursor: pointer;
-    color: black;
     position: relative; /* Positionnement relatif pour eviter le chevauchemnt */
     margin-top: 20px; 
     margin-left: 25px;
