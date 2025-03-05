@@ -99,7 +99,7 @@
                 smallHeart.className = "small-heart"; // Ajout de la classe pour le style
                 smallHeart.style.left = (Math.random() * 80 - 40) + "px"; // Cette ligne de code génère une position horizontale aléatoire pour un petit cœur en utilisant Math.random(), qui produit un nombre entre 0 et 1. Ce nombre est ensuite multiplié par 80 pour obtenir une valeur entre 0 et 80, puis on soustrait 40 afin que la position finale varie entre -40px et 40px. Cela permet aux petits cœurs de se déplacer aléatoirement à gauche ou à droite du cœur principal
                 smallHeart.style.top = "-20px"; // Position initiale juste au-dessus du cœur principal
-                smallHeart.style.setProperty('--x-move', `${Math.random() * 60 - 30}px`); // Déplacement aléatoire en X
+                smallHeart.style.setProperty('--x-move', (Math.random() * 60 - 30) + "px"); // Définit une variable CSS (--x-move) avec un déplacement horizontal aléatoire entre -30px et 30px
                 heart.appendChild(smallHeart); // Ajoute le petit cœur dans le cœur principal
                 
                 // Supprime le petit cœur après 1 seconde pour éviter l'encombrement
