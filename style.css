@@ -396,7 +396,7 @@ select:hover {
 }
 
 /* Bouton J'aime */
-.like-button {
+.like {
     font-size: 3em;
     cursor: pointer;
     color: black;
@@ -405,24 +405,23 @@ select:hover {
     margin-left: 5px; /* Marge à gauche */
 }
 
-.like-button:hover {
+.like:hover {
     color: red;
 }
 
-.like-button.liked {
+.like.liked {
     color: red;
 }
 
 /* Bouton Fermer */
-.close-button {
-    font-size: 3em;
+.croix {
+    font-size: 1.5em;
     cursor: pointer;
-    color: black;
     position: relative; /* Positionnement relatif pour eviter le chevauchemnt */
     margin-top: 20px; 
     margin-left: 25px;
 }
 
-.close-button:hover {
+.croix:hover {
     color: red;
 }
