@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
     }
 });
 
-function basculerMusique() {
+function toggleMusic() {
     const audio = document.getElementById("musique-fond");
     const bouton = document.getElementById("basculer-musique");
     if (audio.paused) {
@@ -27,18 +27,6 @@ function basculerMusique() {
     }
 }
 
-// Fonction pour basculer la musique
-function toggleMusic() {
-    const audio = document.getElementById("background-music");
-    const button = document.getElementById("toggle-music");
-    if (audio.paused) {
-        audio.play();
-        button.textContent = "Désactiver la musique";
-    } else {
-        audio.pause();
-        button.textContent = "Activer la musique";
-    }
-}
 
 // Fonction pour afficher les sous-catégories
 function afficherSousMotif() {
