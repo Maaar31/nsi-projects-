@@ -27,6 +27,19 @@ function basculerMusique() {
     }
 }
 
+// Fonction pour basculer la musique
+function toggleMusic() {
+    const audio = document.getElementById("background-music");
+    const button = document.getElementById("toggle-music");
+    if (audio.paused) {
+        audio.play();
+        button.textContent = "Désactiver la musique";
+    } else {
+        audio.pause();
+        button.textContent = "Activer la musique";
+    }
+}
+
 // Fonction pour afficher les sous-catégories
 function afficherSousMotif() {
     const motif = document.getElementById("motif").value;
