@@ -106,18 +106,6 @@
         heart.addEventListener("mouseover", () => heart.style.transform = "scale(1.2) rotate(-45deg)");
         heart.addEventListener("mouseout", () => heart.style.transform = "scale(1) rotate(-45deg)");
 
-        // Fonction pour basculer la musique
-        function toggleMusic() {
-            const audio = document.getElementById("background-music");
-            const button = document.getElementById("toggle-music");
-            if (audio.paused) {
-                audio.play();
-                button.textContent = "Désactiver la musique";
-            } else {
-                audio.pause();
-                button.textContent = "Activer la musique";
-            }
-        }
     </script>
 </body>
 </html>
