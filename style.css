@@ -278,7 +278,6 @@ tr:nth-child(odd) {
 /* Menu déroulant */
 nav ul {
     list-style-type: none; /* Supprimer les puces des listes */
-    margin: 0; /* Supprimer la marge par défaut */
     display: flex; /* Affichage en flexbox */
     justify-content: center; /* Centrer les éléments horizontalement */
     background-color: #FF1493; /* Couleur de fond du menu */
@@ -296,12 +295,11 @@ nav ul li a {
 
 .sous {
     display: none; /* Cacher le sous-menu par défaut */
-    position: absolute; /* Positionnement absolu */
-    top: 100%; /* Placer le sous-menu en dessous du parent */
-    background-color: #FF1493; /* Couleur de fond du sous-menu */
+    position: absolute; 
+    background-color: #FF1493; 
     padding: 0; /* Supprimer le padding */
     width: 125px; /* Largeur du sous-menu */
-    border-radius: 10px; /* Bordures arrondies */
+    border-radius: 10px; 
 }
 
 .sous li {
@@ -309,12 +307,8 @@ nav ul li a {
     border-bottom: 1px solid white; /* Bordure en bas */
 }
 
-.sous li:last-child {
-    border-bottom: none; /* Supprimer la bordure du dernier élément */
-}
-
 nav ul li:hover .sous {
-    display: block; /* Afficher le sous-menu au survol */
+    display: block; 
 }
 
 /* Logo animé */
