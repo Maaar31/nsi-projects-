@@ -425,3 +425,8 @@ select:hover {
 .croix:hover {
     color: red;
 }
+/* pour éviter aux bouttons blog de se coller dans l'index */
+ul li .blog {
+    margin: 20px;
+    padding: 20px;
+}
