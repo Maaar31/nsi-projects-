@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
     }
 });
 
-function basculerMusique() {
+function toggleMusic() {
     const audio = document.getElementById("musique-fond");
     const bouton = document.getElementById("basculer-musique");
     if (audio.paused) {
@@ -26,6 +26,7 @@ function basculerMusique() {
         bouton.textContent = "Activer la musique"; // Mettre à jour le texte du bouton
     }
 }
+
 
 // Fonction pour afficher les sous-catégories
 function afficherSousMotif() {
@@ -73,4 +74,29 @@ function obtenirEmailContact() {
 
     // Afficher l'email de contact ou un message d'erreur
     document.getElementById("email-contact").textContent = email ? `Veuillez contacter : ${email}` : "Veuillez sélectionner un motif et une sous-catégorie.";
+}
+
+// Fonction pour obtenir un exemple de mail
+function obtenirExempleEmail() {
+    const motif = document.getElementById("motif").value;
+    const sousMotif = document.getElementById("sous-motif").value;
+    let exempleEmail = "";
+
+    // Déterminer l'exemple de mail en fonction du motif et de la sous-catégorie sélectionnés
+    if (motif === "support") {
+        if (sousMotif === "technical") {
+            exempleEmail = "Bonjour, \n\nJe rencontre un problème technique avec votre service. Pouvez-vous m'aider à le résoudre ?\n\nMerci.";
+        } else if (sousMotif === "account") {
+            exempleEmail = "Bonjour, \n\nJ'ai un problème avec mon compte. Pouvez-vous m'aider à le résoudre ?\n\nMerci.";
+        }
+    } else if (motif === "feedback") {
+        if (sousMotif === "suggestion") {
+            exempleEmail = "Bonjour, \n\nJ'ai une suggestion à vous faire concernant votre service. Voici ma suggestion :\n\nMerci.";
+        } else if (sousMotif === "complaint") {
+            exempleEmail = "Bonjour, \n\nJe souhaite déposer une plainte concernant votre service. Voici les détails :\n\nMerci.";
+        }
+    }
+
+    // Afficher l'exemple de mail ou un message d'erreur
+    document.getElementById("exemple-email").textContent = exempleEmail ? `Exemple de mail :\n\n${exempleEmail}` : "Veuillez sélectionner un motif et une sous-catégorie.";
 }

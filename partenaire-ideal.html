@@ -1,76 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscription - LoveWish</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Définition du type de document et de la langue -->
+    <meta charset="UTF-8"> <!-- Encodage des caractères en UTF-8 pour supporter les accents et caractères spéciaux -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajuste l'affichage sur tous les types d'écrans -->
+    <title>Inscription - LoveWish</title> <!-- Titre affiché dans l'onglet du navigateur -->
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers la feuille de style externe pour le design -->
 </head>
 <body>
     <header>
-        <h1>L'amour n'est pas loin</h1>
+        <h1>L'amour n'est pas loin</h1> <!-- Titre principal du site -->
         <nav>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li class="deroulant">
-                    <a href="#">Blog</a>
-                    <ul class="sous">
-                        <li><a href="blog/article1.html">Article 1</a></li>
-                        <li><a href="blog/article2.html">Article 2</a></li>
-                        <li><a href="blog/article3.html">Article 3</a></li>
+                <li><a href="index.html">Accueil</a></li> <!-- Lien vers la page d'accueil -->
+                <li><a href="faq.html">FAQ</a></li> <!-- Lien vers la page des questions fréquentes -->
+                <li><a href="contact.html">Contact</a></li> <!-- Lien vers la page de contact -->
+                <li class="deroulant"> <!-- Élément de menu déroulant contenant plusieurs sous-liens -->
+                    <a href="#">Blog</a> <!-- Lien principal du menu déroulant -->
+                    <ul class="sous"> <!-- Liste des sous-liens du blog -->
+                        <li><a href="blog/article1.html">Article 1</a></li> <!-- Lien vers un article -->
+                        <li><a href="blog/article2.html">Article 2</a></li> <!-- Lien vers un autre article -->
+                        <li><a href="blog/article3.html">Article 3</a></li> <!-- Lien vers un troisième article -->
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <div class="form-container">
-        <h2>Pour améliorer votre expérience, décrivez-nous votre type de partenaire !</h2>
-        <form action="#" method="POST">
-            <div class="form-group">
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" required>
+    <div class="form-container"> <!-- Conteneur principal du formulaire -->
+        <h2>Pour améliorer votre expérience, décrivez-nous votre type de partenaire !</h2> <!-- Titre du formulaire -->
+        <form action="#" method="POST"> <!-- Début du formulaire envoyé en POST -->
+            <div class="form-group"> <!-- Groupe de champs du formulaire -->
+                <label for="name">Nom :</label> <!-- Label du champ nom -->
+                <input type="text" id="name" name="name" required> <!-- Champ de saisie du nom, obligatoire -->
             </div>
 
             <div class="form-group">
-                <label for="hair-color">Couleur de cheveux :</label>
-                <select id="hair-color" name="hair-color">
-                    <option value="Blond(e)">Blonde</option>
-                    <option value="Brun(e)">Brune</option>
-                    <option value="Autre">Autre</option>
+                <label for="hair-color">Couleur de cheveux :</label> <!-- Label du menu déroulant pour la couleur de cheveux -->
+                <select id="hair-color" name="hair-color"> <!-- Sélection de la couleur de cheveux -->
+                    <option value="Blond(e)">Blonde</option> <!-- Option Blonde -->
+                    <option value="Brun(e)">Brune</option> <!-- Option Brune -->
+                    <option value="Autre">Autre</option> <!-- Option Autre -->
                 </select>
             </div>
 
             <div class="form-group">
-                <label for="age">Âge :</label>
-                <input type="number" id="age" name="age" required>
+                <label for="age">Âge :</label> <!-- Label du champ âge -->
+                <input type="number" id="age" name="age" required> <!-- Champ numérique pour entrer l'âge, obligatoire -->
             </div>
 
             <div class="form-group">
-                <label for="gender">Sexe :</label>
-                <select id="gender" name="gender">
-                    <option value="homme">Homme</option>
-                    <option value="femme">Femme</option>
-                    <option value="autre">Autre</option>
+                <label for="gender">Sexe :</label> <!-- Label du champ sexe -->
+                <select id="gender" name="gender"> <!-- Sélection du sexe -->
+                    <option value="homme">Homme</option> <!-- Option Homme -->
+                    <option value="femme">Femme</option> <!-- Option Femme -->
+                    <option value="autre">Autre</option> <!-- Option Autre -->
                 </select>
             </div>
 
             <div class="form-group">
-                <label for="bio">À propos d'elle/lui :</label>
-                <textarea id="bio" name="bio" placeholder="Décrivez votre partenaire idéal(e)..." rows="4"></textarea>
+                <label for="bio">À propos d'elle/lui :</label> <!-- Label de la zone de texte -->
+                <textarea id="bio" name="bio" placeholder="Décrivez votre partenaire idéal(e)..." rows="4"></textarea> <!-- Zone de texte pour décrire le partenaire idéal -->
             </div>
 
             <div class="form-group">
-                <button type="submit" class="btn">Enregistrer mon type de partenaire</button>
+                <button type="submit" class="btn">Enregistrer mon type de partenaire</button> <!-- Bouton pour soumettre le formulaire -->
             </div>
         </form>
     </div>
 
     <footer>
-        <p>&copy; 2024 LoveWish - Tous droits réservés</p>
+        <p>&copy; 2024 LoveWish - Tous droits réservés</p> <!-- Pied de page avec droit d'auteur -->
     </footer>
-    <script src="script.js"></script>
+    
+    <script src="script.js"></script> <!-- Inclusion du fichier JavaScript pour interactivité -->
 </body>
 </html>
