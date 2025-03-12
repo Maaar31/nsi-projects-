@@ -275,7 +275,7 @@ tr:nth-child(odd) {
     top: 325px; left: 225px;
 }
 
-/* Menu déroulant */
+/* Menu */
 nav ul {
     list-style-type: none; /* Supprimer les puces des listes */
     display: flex; /* Affichage en flexbox */
@@ -293,6 +293,7 @@ nav ul li a {
     font-weight: bold; /* Mettre le texte en gras */
 }
 
+/* Menu déroulant */
 .sous {
     display: none; /* Cacher le sous-menu par défaut */
     position: absolute; 
