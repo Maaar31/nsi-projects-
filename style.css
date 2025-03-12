@@ -299,7 +299,8 @@ nav ul li a {
     background-color: #FF1493; 
     padding: 0; /* Supprimer le padding */
     width: 125px; /* Largeur du sous-menu */
-    border-radius: 10px; 
+    border-radius: 10px;
+    z-index: 200; /* sinon il est cacher par les profils cards */
 }
 
 .sous li {
